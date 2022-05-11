@@ -1,0 +1,430 @@
+
+body{
+  box-sizing: border-box;
+  background: Radial-gradient(circle,#958FA1,  #F0DEF6,#DEF6E9);
+
+}
+label, p{
+  word-spacing: .4em;
+  letter-spacing: .1em;
+}
+
+
+button, label, p{
+  font-family: Mystery,cursive;
+  font-weight: normal;
+}
+
+h1,h2
+{
+  font-family: Caligraphy,Mystery,cursive;
+  font-weight: normal;
+}
+
+
+.CodingKittens
+{
+  position: absolute;
+  display: inline-block;
+  image-rendering: pixelated;
+  border-radius: 50px;
+  left: 40%;
+  margin: 5em;
+  width: 40px;
+  transition: left 2s, margin 2s, width 2s;
+}
+
+.BiggerImg
+{
+  left: 33%;
+  margin: 2em;
+  width: 400px;
+  transition: left 2s, margin 2s, width 2s;
+}
+
+
+/* game */
+ #memoryGame #game
+{
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  margin-top: 13%;
+  left: 3%;
+}
+
+#memoryGame h1
+{
+  position: absolute;
+  display: inline-block;
+  background-color: #A390B7;
+  border-radius: 10px;
+  font-size:5em;
+  top: 1%;
+  left: 32%;
+  padding: 10px;
+}
+
+#memoryGame h2
+{
+  font-family: Mystery,cursive;
+  position: absolute;
+  display: inline-block;
+  padding: 5px;
+  padding-right: 10px;
+  background-color: #A390B7;
+  border-radius: 10px;
+  font-size:2em;
+  top: 10%;
+  left: 16%;
+}
+
+#memoryGame h1:hover
+{
+  background: Radial-gradient(circle,#A390B7,#E4C48E,#8F6828);
+}
+
+ #memoryGame #turnTxt
+{
+  left: 2%;
+}
+
+ #memoryGame #timmer
+ {
+   font-family: Caligraphy,Mystery,cursive;
+   box-sizing: border-box;
+   font-size: 3em;
+   background-color: #BA434A;
+   top: 7%;
+  left: 70.6%;
+ }
+
+#memoryGame #txtDiff
+{
+  font-size: 3em;
+  top: -3%;
+  left: 86%;
+}
+
+
+#memoryGame button
+{
+  position: absolute;
+  top: 1%;
+  left: 13%;
+}
+/*               */
+
+/* Game Over */
+
+
+
+.GameOver
+{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 150%;
+  left: -1%;
+  width: 103%;
+  height: 10%;
+  z-index: 5;
+  transition: top 3s, height 3s;
+}
+
+
+.GameOver h2
+{
+  color: #FFFFFF;
+  position: absolute;
+  display: inline-block;
+  font-size:5em;
+  top: 5%;
+  left: 36%;
+}
+
+
+ #moveObj
+{
+  top: 25%;
+  left: -1%;
+  height: 250%;
+  transition: top 3s, height 3s;
+}
+/*               */
+
+/* game window/cards */
+
+#game div {
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-image: url("sprites/cardBacks/backOfCard.png"), url("sprites/cardBacks/night.png");
+  background-repeat: no-repeat;
+  background-size: contain,cover;
+  width: 12%;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+div{
+  transform: scaleX(1);
+  transition: transform 2s;
+}
+
+#game div:hover
+{
+  filter: invert(0%) sepia(10%) saturate(10%) hue-rotate(1deg) brightness(50%) contrast(100%);
+}
+
+.CardFace
+{
+  transform: scaleX(-1);
+}
+
+/*               */
+
+
+/* main menu */
+
+
+
+#mainMenu button
+{
+  font-family: Caligraphy,Mystery,cursive;
+  display: block;
+  position: absolute;
+  left: 29%;
+  font-size: 3.5em;
+  margin: 3em;
+  border-color: #254243;
+}
+
+#mainMenu button:last-of-type
+{
+  top: 30%;
+}
+
+#mainMenu button:hover
+{
+  left: 29.5%;
+  font-size: 3em;
+  margin: 3.5em;
+}
+
+#mainMenu button[name="newGame"]{
+  left: 26%;
+  font-size: 5em;
+  margin: 2em;
+}
+
+#mainMenu button[name="newGame"]:hover {
+  left: 28%;
+  font-size: 4em;
+  margin: 2.5em;
+}
+
+button
+{
+  font-size: 2em;
+  background-color: #55AFB1;
+}
+button:hover
+{
+  cursor:pointer;
+  background-color: #397B7D;
+}
+
+/*               */
+
+/* gameSelect */
+
+#gameSelector div
+{
+  position: absolute;
+  display: inline-block;
+  background-color: #A390B7;
+  border-radius: 10px;
+}
+
+#gameSelector button[name='play']
+{
+  font-family: Caligraphy,Mystery,cursive;
+  position: absolute;
+  font-size:5em;
+  top: 80%;
+  left: 44%;
+}
+
+.howManyCards
+{
+box-sizing: border-box;
+top: 10%;
+left: 8em;
+padding: 2em;
+font-size: 1.5em;
+width: 550px;
+height: 600px;
+}
+
+.howManyCards img
+{
+  position: absolute;
+  width: 150px;
+  top: 20%;
+}
+#gameSelector label
+{
+  position: absolute;
+  font-size: 1.5em;
+  text-align: center;
+  top: 55%;
+  left: 30%;
+}
+
+
+#gameSelector #turnLimit
+{
+  position: absolute;
+  font-size: 1em;
+  text-align: center;
+  top: 45%;
+  left: 26%;
+}
+
+#gameSelector #timer
+{
+  position: absolute;
+  font-size: 1em;
+  text-align: center;
+  top: 45%;
+  left: 60%;
+}
+
+.howManyCards img:hover
+{
+  filter: invert(0%) sepia(10%) saturate(10%) hue-rotate(1deg) brightness(50%) contrast(100%);
+}
+.howManyCards h2
+{
+  position: absolute;
+  background-color: #8A75A1;
+  font-size: 3em;
+  top: -8%;
+  left: 1em;
+  padding: 12px;
+  padding-left: 90px;
+  padding-right: 90px;
+  border-radius: 15px;
+}
+.howManyCards h3
+{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.dificulty
+{
+  box-sizing: border-box;
+  top: 10%;
+  left: 30em;
+  padding: 2em;
+  font-size: 1.5em;
+  width: 550px;
+  height: 600px;
+}
+.dificulty button
+{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.dificulty h2
+{
+  position: absolute;
+  background-color: #8A75A1;
+  font-size: 3em;
+  top: -8%;
+  left: 1.7em;
+  padding: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+}
+
+
+.explanitoryText
+{
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #8A75A1;
+  padding: 30px;
+  padding-right: 25px;
+  border-radius: 15px;
+  top: 60%;
+  left: 5.7em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 2em;
+  width: 1100px;
+
+}
+
+/*               */
+
+/* scores */
+#highScorePage h2
+{
+  position: absolute;
+  top: -6%;
+  left: 37%;
+  text-decoration: underline;
+  font-size: 5em;
+}
+
+button[name="clearSave"]
+{
+  position: absolute;
+  top: 1%;
+  left: 80%;
+}
+
+table
+{
+  box-sizing: border-box;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 100px;
+  font-size: 2em;
+  background-color: white;
+  padding: 1em;
+}
+
+thead tr
+{
+  background-color: #9BAAAE;
+  padding: 4em;
+  margin: 50px;
+}
+
+tr
+{
+  background-color: #C8D7DB;
+  padding: 3em;
+}
+
+td
+{
+  text-align: center;
+}
+/*               */
+
+
+.hiddenObj
+{
+  visibility: hidden;
+}

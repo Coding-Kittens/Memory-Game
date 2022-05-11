@@ -1,0 +1,17 @@
+
+
+/* My Custom Fonts! */
+
+
+@font-face {
+font-family: "Caligraphy";
+src: url("Calligraphy-Regular.ttf")format("truetype");
+font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+font-family: "Mystery";
+src: url("Mystery-Regular.ttf")format("truetype");
+font-weight: normal;
+  font-style: normal;
+}

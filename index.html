@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Fonts/fonts.css">
+  </head>
+  <body>
+    <img class="CodingKittens hiddenObj" src="sprites/menu/CodingKittens.png" alt="CodingKittens logo">
+    <button type="button"  class="hiddenObj" name="Menu">Main Menu</button>
+
+    <section id="mainMenu" class="hiddenObj">
+      <button type="button" name="newGame">New Game!</button>
+      <button type="button" name="highScores">High Scores</button>
+    </section>
+
+    <section id="gameSelector" class="hiddenObj" >
+      <form class="" action="index.html" method="post">
+        <div class="howManyCards">
+          <h2>Cards</h2>
+          <h3>14 cards</h3>
+          <img id="cImg"src="sprites/menu/cards.png" alt="cards">
+          <label>Random Number of cards?<input type="checkbox" name="randomCards"></label>
+        </div>
+        <div class="dificulty">
+          <h2>Dificulty</h2>
+          <button type="button" name="dificultyBtn">Easy</button>
+          <label id="timer" class="hiddenObj">Timer<input  type="radio" name="timerOrTurnLimit" value="1"></label>
+          <label  id="turnLimit" class="hiddenObj">Turn Limit<input type="radio" name="timerOrTurnLimit" value="2"></label>
+          <label>Random Dificulty?<input type="checkbox" name="randomDificulty"></label>
+        </div>
+        <p class="explanitoryText">Click on the cards, to change how many you want in the game.</p>
+        <button type="submit" name="play">Play!</button>
+      </form>
+    </section>
+
+    <section id="highScorePage"  class="hiddenObj">
+      <h2>Score Board</h2>
+      <button type="button" name="clearSave">Clear Scores</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Game Size</th>
+            <th>Turns</th>
+            <th>Matches</th>
+            <th>Dificulty</th>
+            <th>Time taken</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="memoryGame" class="hiddenObj">
+      <h1>Memory Game!</h1>
+      <h2 id="turnTxt">Turn: 00/00</h2>
+      <h2 id="matchTxt">Matches: 00</h2>
+      <h2 id="timmer">Timer: 00:00</h2>
+      <h2 id="txtDiff">Easy</h2>
+      <button type="button" name="restart">Restart!</button>
+      <div id="game">
+      </div>
+    </section>
+
+    <section class="GameOver hiddenObj" >
+      <h2>Game Over!</h2>
+    </section>
+
+    <!-- handles saveing to, and getting things from localSave -->
+    <script src="Save.js"></script>
+
+      <!-- handles the random card images -->
+    <script src="CardImageManager.js"></script>
+
+      <!-- handles the cardgame part -->
+    <script src="script.js"></script>
+
+    <!-- handles the buttons menus and scores -->
+    <script src="gameManager.js"></script>
+
+  </body>
+</html>
